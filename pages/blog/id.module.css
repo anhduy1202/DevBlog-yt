@@ -1,0 +1,43 @@
+.html > h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.html > h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.html > ul {
+  margin-bottom: 2rem;
+}
+.html > p {
+  margin: 1rem 0;
+}
+.html > * > * img {
+  margin-bottom: 2rem;
+}
+.html > * > * > code,
+.html > * > code {
+  background-color: rgb(93, 93, 93);
+  padding: 0.25rem;
+  border-radius: 6px;
+}
+.html > * > pre {
+  margin: 1rem 0;
+  background-color: rgb(58, 57, 57);
+  padding: 0.75rem;
+  overflow-x: scroll;
+  border-radius: 12px;
+}
+.html > blockquote {
+  border-left: 3px rgb(167, 167, 167) solid;
+  color: rgb(167, 167, 167);
+  padding-left: 0.55rem;
+  margin: 1rem 0;
+}
+.html > * > li::before {
+  content: '•';
+  font-size: 1.25rem;
+  margin-right: 0.5rem;
+}
