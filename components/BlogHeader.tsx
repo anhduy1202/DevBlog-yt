@@ -21,22 +21,18 @@ const BlogHeader: React.FC<headerProps> = (props) => {
   return (
     <div className="flex">
       <img
-        className="rounded-[50%] mb-4 mr-4"
+        className="rounded-[50%] max-w-[50px] max-h-[50px] mb-4 mr-4"
         src={author.avatar}
-        width={50}
-        height={50}
         alt="author pfp"
       />
       <div className="flex flex-col">
         <p className="font-semibold text-[1rem]"> {author.name} </p>
-        <div className="flex gap-4">
-          <li className="list-none font-normal text-[0.85rem]">
-            {' '}
-            {author.url}{' '}
+        <div className="flex flex-wrap">
+          <li className="list-none font-normal text-[0.85rem] md:mr-4 sm:mr-0">
+            {author.url}
           </li>
-          <li className="font-normal ml-2 text-[0.85rem]">
-            {' '}
-            {createdDate.toLocaleDateString('en-US', options)}{' '}
+          <li className="list-none font-normal text-[0.85rem]">
+            {createdDate.toLocaleDateString('en-US', options)}
           </li>
         </div>
       </div>
